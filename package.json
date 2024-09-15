@@ -1,0 +1,27 @@
+{
+  "name": "gea",
+  "version": "1.0.0",
+  "description": "CLI to scffold an express project with typescript",
+  "main": "scaffold.js",
+  "type": "module",
+  "bin": {
+    "create-gea": "./scaffold.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "generator",
+    "gea",
+    "express",
+    "typescript"  
+  ],
+  "author": "Marcos Silva",
+  "license": "ISC",
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "picocolors": "^1.1.0"
+  }
+}
