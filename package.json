@@ -27,6 +27,7 @@
   "files": [
     "scaffold.js",               
     "copy.js",                   
-    "template-*"  
+    "template-express-js",
+    "template-express-ts"  
   ]
 }
