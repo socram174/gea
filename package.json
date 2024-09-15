@@ -1,7 +1,7 @@
 {
-  "name": "gexp",
-  "version": "1.0.1",
-  "description": "CLI to scffold an express project with typescript",
+  "name": "create-gexp",
+  "version": "1.0.0",
+  "description": "CLI to scaffold an express project",
   "main": "scaffold.js",
   "type": "module",
   "bin": {
@@ -27,6 +27,6 @@
   "files": [
     "scaffold.js",               
     "copy.js",                   
-    "template-express-ts"  
+    "template-*"  
   ]
 }
