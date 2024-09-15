@@ -1,5 +1,5 @@
 {
-  "name": "gea",
+  "name": "gexp",
   "version": "1.0.0",
   "description": "CLI to scffold an express project with typescript",
   "main": "scaffold.js",
