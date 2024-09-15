@@ -19,7 +19,7 @@
     "typescript"  
   ],
   "author": "Marcos Silva",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "picocolors": "^1.1.0"
