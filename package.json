@@ -1,11 +1,11 @@
 {
   "name": "gexp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI to scffold an express project with typescript",
   "main": "scaffold.js",
   "type": "module",
   "bin": {
-    "create-gea": "./scaffold.js"
+    "create-gexp": "./scaffold.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
