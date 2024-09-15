@@ -23,5 +23,10 @@
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "picocolors": "^1.1.0"
-  }
+  },
+  "files": [
+    "scaffold.js",               
+    "copy.js",                   
+    "template-express-ts"  
+  ]
 }
