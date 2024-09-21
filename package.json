@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build"
+    "ci": "npm run build",
+    "format": "prettier --write ."
   },
   "keywords": [
     "cli",
@@ -31,6 +32,7 @@
     "template-express-ts"
   ],
   "devDependencies": {
+    "prettier": "^3.3.3",
     "typescript": "^5.6.2"
   }
 }
