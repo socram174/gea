@@ -1,6 +1,6 @@
 {
   "name": "create-gexp",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "CLI to scaffold an express project",
   "main": "scaffold.js",
   "type": "module",
@@ -27,7 +27,8 @@
   },
   "files": [
     "dist",
-    "template-*"
+    "template-express-js",
+    "template-express-ts"
   ],
   "devDependencies": {
     "typescript": "^5.6.2"
