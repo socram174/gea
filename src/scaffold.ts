@@ -26,21 +26,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const defaultData= {
-    type: "module",
-    description: "Base express-ts app",
-    main: "index.js",
-    scripts: {
-        start: "node src/index.js",
-        build: "tsc"
-    },
-    dependencies: {
-        express: "^4.21.0"
-    },
-    devDependencies: {
-        typescript: "^5.6.2",
-        "@types/node": "^22.5.4"
-    },
-    appName: "express-ts"
+    appName: "gexp-app"
 }
 
 
