@@ -1,5 +1,5 @@
 {
-  "exclude": ["node_modules", "template-*", "dist"],
+  "exclude": ["node_modules", "template-*", "dist", "**/*.test.ts"],
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
