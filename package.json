@@ -1,6 +1,6 @@
 {
   "name": "create-gexp",
-  "version": "2.0.4",
+  "version": "2.0.3",
   "description": "CLI to scaffold an express project",
   "main": "scaffold.js",
   "type": "module",
