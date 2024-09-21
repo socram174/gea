@@ -49,59 +49,6 @@ const templates = {
   "js": "./template-express-js"
 };
 
-
-// const scaffold = () => {
-//     try {
-//         // Initialize package.json
-//         execSync('mkdir ' + defaultData.appName);
-
-//         process.chdir('./' + defaultData.appName);
-
-//         execSync('npm init -y');
-        
-//         // Read package.json
-//         const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-
-//         // Configure package.json
-//         packageJson.type = defaultData.type;
-//         packageJson.description = defaultData.description;
-//         packageJson.main = defaultData.main;
-//         packageJson.scripts = defaultData.scripts;
-
-//         // Add dependencias
-//         packageJson.dependencies = defaultData.dependencies;
-
-//         // Add dev dependencies
-//         packageJson.devDependencies = defaultData.devDependencies;
-
-//         console.log("✅ Configured package.json.");
-//         //console.log(packageJson);
-
-//         // Write updated package.json
-//         fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2));
-
-//         // Initialize tsconfig.json file
-//         execSync('tsc --init');
-//         console.log("✅ tsconfig.json created.");
-
-//         // Create src directory and index.ts file
-//         execSync('mkdir src && echo console.log(`Hello World!`); > src/index.ts');
-//         console.log("✅ Created src directory and index.ts file.\n");
-
-//         //console.log("✅ Las dependencias han sido añadidas a package.json!");
-//         console.log("Execute the following commands to start the app:\n");// exe
-//         console.log("cd " + defaultData.appName);
-//         console.log("npm install");
-//         console.log("npm run build");
-//         console.log("npm start");
-
-//     } catch (err) {
-//         console.error( err.message);
-//     }
-// };
-
-// scaffold();
-
 async function main() {
     console.log();
     intro(color.inverse('Generate express app!'));
@@ -138,43 +85,6 @@ async function main() {
 
     copyRecursiveSync(templatePath, projectPath);
 
-    // // Initialize package.json
-    // execSync('mkdir ' + projectName);
-    // process.chdir('./' + projectName);
-    // execSync('npm init -y');
-  
-    // await sleep(500);
-
-    // s.message('Configuring package.json');
-    // // Read package.json
-    // const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-
-    // // Configure package.json
-    // packageJson.type = defaultData.type;
-    // packageJson.description = defaultData.description;
-    // packageJson.main = defaultData.main;
-    // packageJson.scripts = defaultData.scripts;
-
-    // // Add dependencias
-    // packageJson.dependencies = defaultData.dependencies;
-
-    // // Add dev dependencies
-    // packageJson.devDependencies = defaultData.devDependencies;
-
-    // // Write updated package.json
-    // fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2));
-
-    // await sleep(500);
-    // s.message('Creating tsconfig.json file');
-    // // Initialize tsconfig.json file
-    // execSync('tsc --init');
-
-    // await sleep(500);
-    // s.message('Creating project directory and index.ts file');
-    // // Create src directory and index.ts file
-    // execSync('mkdir src && echo console.log(`Hello World!`); > src/index.ts');
-    
-    // await sleep(500);
     s.stop('Youre all set!');
   
     outro(`

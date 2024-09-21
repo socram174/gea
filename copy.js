@@ -4,35 +4,6 @@ import fs from "fs";
 import path from "path";
 import color from "picocolors";
 
-// const data = {
-//     appName: "my-app",
-//     template: "express-ts"
-// }
-
-// const copy = () => {
-//     if (!fs.existsSync(data.appName)) {
-//         fs.mkdirSync(data.appName);
-//       }
-//     try {
-//         fs.copyFileSync(`./${data.template}/package.json`, `./${data.appName}/package.json`);
-//         console.log("✅ package.json copiado correctamente!");
-
-//         fs.copyFileSync(`./${data.template}/tsconfig.json`, `./${data.appName}/tsconfig.json`);
-//         console.log("✅ tsconfig.json copiado correctamente!");
-
-//         fs.copyFileSync(`./${data.template}/src/index.ts`, `./${data.appName}/src/index.ts`);
-//         console.log("✅ index.ts copiado correctamente!");
-//     } catch (error) {
-//         console.error(error);
-//     }
-// }
-
-// copy();
-
-// const entries = fs.readdirSync("./express-ts", { withFileTypes: true });
-// console.log(entries);
-// console.log(entries[1].isDirectory());
-
 export function copyRecursiveSync(src, dest) {
   // If folder exists, exit, else create it
   if (fs.existsSync(dest)) {
@@ -58,13 +29,3 @@ export function copyRecursiveSync(src, dest) {
     }
   });
 }
-
-// // Ruta de la carpeta origen
-// const sourceDir = "./template-express-ts";
-// // Ruta de la carpeta destino
-// const destinationDir = "./prueba-jajaxdw";
-
-// // Ejecutar la función para copiar
-// copyRecursiveSync(sourceDir, destinationDir);
-
-// console.log("Archivos copiados con éxito.");
