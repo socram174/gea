@@ -1,14 +1,15 @@
 {
   "name": "create-gexp",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "CLI to scaffold an express project",
   "main": "scaffold.js",
   "type": "module",
   "bin": {
-    "create-gexp": "./scaffold.js"
+    "create-gexp": "dist/scaffold.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "ci": "npm run build"
   },
   "keywords": [
     "cli",
@@ -16,7 +17,7 @@
     "generator",
     "gea",
     "express",
-    "typescript"  
+    "typescript"
   ],
   "author": "Marcos Silva",
   "license": "MIT",
@@ -25,9 +26,10 @@
     "picocolors": "^1.1.0"
   },
   "files": [
-    "scaffold.js",               
-    "copy.js",                   
-    "template-express-js",
-    "template-express-ts"  
-  ]
+    "dist",
+    "template-*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
 }

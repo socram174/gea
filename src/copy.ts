@@ -4,7 +4,10 @@ import fs from "fs";
 import path from "path";
 import color from "picocolors";
 
-export function copyRecursiveSync(src, dest) {
+export function copyRecursiveSync(src: string, dest: string) {
+
+  console.log(color.green(`Copying ${src} to ${dest}`));
+
   // If folder exists, exit, else create it
   if (fs.existsSync(dest)) {
     console.log(color.red("Destination directory already exists. Aborting."));

@@ -44,9 +44,11 @@ const defaultData= {
 }
 
 
+type Template = "ts" | "js";
+
 const templates = {
-  "ts": "./template-express-ts",
-  "js": "./template-express-js"
+  "ts": "../template-express-ts",
+  "js": "../template-express-js"
 };
 
 async function main() {
@@ -70,7 +72,8 @@ async function main() {
         { value: 'ts', label: 'TypeScript' },
         { value: 'js', label: 'JavaScript' },
       ],
-    });
+    }) as Template;
+
   
     if (isCancel(projectType)) {
       cancel('Operation cancelled');
@@ -82,6 +85,8 @@ async function main() {
     s.start('Initializing project');
     const templatePath = path.resolve(__dirname, templates[projectType]);
     const projectPath = path.resolve(`./${projectName}`);
+
+
 
     copyRecursiveSync(templatePath, projectPath);
 
