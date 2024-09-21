@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 
-import fs from "fs";
-import path from "path";
-import color from "picocolors";
+import fs from 'fs';
+import path from 'path';
+import color from 'picocolors';
 
 export function copyRecursiveSync(src: string, dest: string) {
-
   // If folder exists, exit, else create it
   if (fs.existsSync(dest)) {
-    console.log(color.red("Destination directory already exists. Aborting."));
+    console.log(color.red('Destination directory already exists. Aborting.'));
     process.exit(0);
   }
   fs.mkdirSync(dest);
