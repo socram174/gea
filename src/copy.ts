@@ -6,8 +6,6 @@ import color from "picocolors";
 
 export function copyRecursiveSync(src: string, dest: string) {
 
-  console.log(color.green(`Copying ${src} to ${dest}`));
-
   // If folder exists, exit, else create it
   if (fs.existsSync(dest)) {
     console.log(color.red("Destination directory already exists. Aborting."));
@@ -15,19 +13,19 @@ export function copyRecursiveSync(src: string, dest: string) {
   }
   fs.mkdirSync(dest);
 
-  // Leemos todos los archivos y carpetas en la carpeta origen
+  // Read all files in the source directory
   const entries = fs.readdirSync(src, { withFileTypes: true });
 
-  // Iteramos sobre cada archivo o carpeta
+  // Iterate over each file in the source directory
   entries.forEach((entry) => {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
 
     if (entry.isDirectory()) {
-      // Si es una carpeta, la copiamos recursivamente
+      // If the file is a directory, recursively copy it
       copyRecursiveSync(srcPath, destPath);
     } else {
-      // Si es un archivo, lo copiamos directamente
+      // If it is a file, copy it
       fs.copyFileSync(srcPath, destPath);
     }
   });
