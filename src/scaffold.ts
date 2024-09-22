@@ -82,8 +82,8 @@ async function main() {
   const projectType = (await select({
     message: 'Pick a project type.',
     options: [
-      { value: 'ts', label: 'TypeScript' },
-      { value: 'js', label: 'JavaScript' },
+      { value: 'ts', label: color.blue('TypeScript') },
+      { value: 'js', label: color.yellow('JavaScript') },
     ],
   })) as Template;
 
@@ -100,7 +100,7 @@ async function main() {
 
   copyRecursiveSync(templatePath, projectPath);
 
-  s.stop('Youre all set!');
+  s.stop("You're all set!");
 
   outro(templates[projectType].message(projectName));
 }
