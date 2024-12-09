@@ -28,7 +28,7 @@
   "author": "Marcos Silva",
   "license": "MIT",
   "dependencies": {
-    "@clack/prompts": "^0.7.0",
+    "@clack/prompts": "^0.8.1",
     "picocolors": "^1.1.0"
   },
   "files": [
